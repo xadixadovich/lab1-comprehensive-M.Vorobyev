@@ -1,6 +1,3 @@
-import os
-
-
 def calculate_cart_total(cart_sum, tier, promos):
     price = cart_sum
     if cart_sum > 15000:
@@ -17,6 +14,3 @@ def calculate_cart_total(cart_sum, tier, promos):
     if price < cart_sum * 0.70:
         price = cart_sum * 0.70
     return price
-
-
-LONG_LINE = "это намеренно очень длинная строка, чтобы нарушить ограничение flake8 в 80 символов"
